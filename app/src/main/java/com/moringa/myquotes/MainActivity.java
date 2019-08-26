@@ -9,6 +9,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import butterknife.ButterKnife;
+
 import static java.lang.Math.E;
 
 public class MainActivity extends AppCompatActivity {
@@ -21,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         mQuotesEditText = (EditText) findViewById(R.id.QuotesEditText);
         mFindQuotesButton = (Button) findViewById(R.id.FindQuotesButton);
-
+        ButterKnife.bind(this);
 
         mFindQuotesButton.setOnClickListener(new View.OnClickListener() {
             @Override
