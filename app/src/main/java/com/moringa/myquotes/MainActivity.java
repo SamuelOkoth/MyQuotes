@@ -27,7 +27,9 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Toast.makeText(MainActivity.this, "Welcome to The Quotes World", Toast.LENGTH_LONG).show();
+                String location = mQuotesEditText.getText().toString();
                 Intent intent = new Intent(MainActivity.this, QuotesActivity.class);
+                intent.putExtra("QuotesActivity", location);
                 startActivity(intent);
             }
         });
