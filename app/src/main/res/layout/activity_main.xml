@@ -37,7 +37,7 @@
         android:layout_below="@+id/textView"
         android:hint="see quotes"
         android:padding="5dp"
-        android:text="EditText"
+        android:text="Type"
         android:textColor="#000000"/>
 
     <Button
