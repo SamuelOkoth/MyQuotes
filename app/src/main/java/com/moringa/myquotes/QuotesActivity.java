@@ -19,7 +19,8 @@ public class QuotesActivity extends AppCompatActivity  {
 
     private String[] Quotes = new String[] {"I've learned to ignore the negative people and just be a living example of confidence and self-love "
              , "Corgito Ergo Sum",
-            "Life is an Dream", "Every Dog has its day"
+            "Life is an Dream", "Every Dog has its day","Diversity is what makes life interesting.","My mission in life is not merely to survive, but to thrive; and to do so with some passion, some compassion, some humor, and some style."
+
              };
 
     @Override
