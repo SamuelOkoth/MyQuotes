@@ -1,5 +1,6 @@
 import java.io.IOException;
 
+import okhttp3.Call;
 import okhttp3.Callback;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
@@ -20,5 +21,10 @@ public class QuoteSrvice {
                     .build();
 
             Response response = client.newCall(request).execute();
-    }
+
+
+            Call call = client.newCall(request);
+            call.enqueue(callback);
+
+        }
 }
