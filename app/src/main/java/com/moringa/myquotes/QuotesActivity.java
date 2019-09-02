@@ -10,8 +10,13 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import java.io.IOException;
+
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import okhttp3.Call;
+import okhttp3.Callback;
+import okhttp3.Response;
 
 public class QuotesActivity extends AppCompatActivity  {
  @BindView(R.id.QuotesEditText)TextView mTextview;
@@ -38,8 +43,24 @@ public class QuotesActivity extends AppCompatActivity  {
 
 
 
+
+
         mQuotesEditText.setText("Here are all the available Quotes: " + Quotes);
 
 
+    }
+    private void getQuotes(String Quotes) throws IOException {
+        final QuoteService quoteService = new QuoteService();
+        quoteService.findQuotes(Quotes, new Callback() {
+            @Override
+            public void onFailure(Call call, IOException e) {
+
+            }
+
+            @Override
+            public void onResponse(Call call, Response response) throws IOException {
+
+            }
+        });
     }
 }
