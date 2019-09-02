@@ -11,8 +11,8 @@ android {
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
 //        buildTypes.each {
-//            it.buildConfigField 'String', 'rapidapi_TOKEN', rapidapi_TOKEN
-//        }
+////            it.buildConfigField 'String', 'rapidapi_TOKEN', rapidapi_TOKEN
+////        }
     }
     buildTypes {
         release {
