@@ -1,5 +1,9 @@
 package com.moringa.myquotes;
 
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import java.io.IOException;
 import java.util.ArrayList;
 
@@ -30,5 +34,13 @@ public class QuoteService {
         call.enqueue(callback);
 
     }
-    public ArrayList<Quotes>p
+    public ArrayList<Quotes> processResults(Response response) throws JSONException {
+        String jsonData = response.body().string();
+        JSONObject rapidapiJSON = new JSONObject(jsonData);
+        JSONArray businessesJSON = rapidapiJSON.getJSONArray("businesses");
+
+        if (response.isSuccessful()){
+            for (int i = 0;i < businessesJSON.length();i++)
+        }
+    }
 }
