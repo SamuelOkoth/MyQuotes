@@ -1,6 +1,7 @@
 package com.moringa.myquotes;
 
 import java.io.IOException;
+import java.util.ArrayList;
 
 import okhttp3.Call;
 import okhttp3.Callback;
@@ -27,5 +28,7 @@ public class QuoteService {
 
         Call call = client.newCall(request);
         call.enqueue(callback);
+
     }
+    public ArrayList<Quotes>p
 }
