@@ -19,7 +19,10 @@ import okhttp3.Call;
 import okhttp3.Callback;
 import okhttp3.Response;
 
+import static android.os.Build.VERSION_CODES.Q;
+
 public class QuotesActivity extends AppCompatActivity  {
+    public static final String TAG = QuotesActivity.class.getSimpleName();
  @BindView(R.id.QuotesEditText)TextView mTextview;
  @BindView(R.id.listView)ListView mListview;
 
@@ -48,6 +51,11 @@ public class QuotesActivity extends AppCompatActivity  {
 
         mQuotesEditText.setText("Here are all the available Quotes: " + Quotes);
 
+        try {
+            getQuotes(Quotes);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 
     }
     private void getQuotes(String Quotes) throws IOException {

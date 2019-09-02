@@ -4,29 +4,28 @@ import java.io.IOException;
 
 import okhttp3.Call;
 import okhttp3.Callback;
+import okhttp3.HttpUrl;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.Response;
 
 public class QuoteService {
 
+    public static void findQuotes(String Quotes, Callback callback) {
 
+        OkHttpClient client = new OkHttpClient.Builder()
+                .build();
 
-        public static void findQuotes(String Quotes, Callback callback) throws IOException {
-            OkHttpClient client = new OkHttpClient();
+        HttpUrl.Builder urlBuilder = HttpUrl.parse(Constants.rapidapi_BASE_URL).newBuilder();
+            urlBuilder.addQueryParameter(Constants.rapidapi_TOKEN_QUERY_PARAMETER, Quotes);
+        String url = urlBuilder.build().toString();
 
-            Request request = new Request.Builder()
-                    .url("https://150000-quotes.p.rapidapi.com/keyword/Life")
-                    .get()
-                    .addHeader("x-rapidapi-host", "150000-quotes.p.rapidapi.com")
-                    .addHeader("x-rapidapi-key", "77721d23f1msh474eb6b7ee8bfb6p17f285jsnc5b2bccec497")
-                    .build();
+        Request request= new Request.Builder()
+                .url(url)
+                .header("Authorization", Constants.rapidapi_TOKEN)
+                .build();
 
-            Response response = client.newCall(request).execute();
-
-
-            Call call = client.newCall(request);
-            call.enqueue(callback);
-
-        }
+        Call call = client.newCall(request);
+        call.enqueue(callback);
+    }
 }
