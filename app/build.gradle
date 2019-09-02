@@ -10,6 +10,9 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+//        buildTypes.each {
+//            it.buildConfigField 'String', 'rapidapi_TOKEN', rapidapi_TOKEN
+//        }
     }
     buildTypes {
         release {
@@ -29,4 +32,5 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
     implementation 'com.jakewharton:butterknife:8.8.1'
     annotationProcessor 'com.jakewharton:butterknife-compiler:10.1.0'
+    implementation 'com.squareup.okhttp3:okhttp:3.10.0'
 }
