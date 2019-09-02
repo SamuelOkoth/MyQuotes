@@ -6,12 +6,37 @@ public class Quotes {
     private String mImageUrl;
 
 
+    public String getmQuote() {
+        return mQuote;
+    }
 
-    public Quotes(String Quote, String Author, String mImageUrl){
+    public void setmQuote(String mQuote) {
+        this.mQuote = mQuote;
+    }
+
+    public String getmAuthor() {
+        return mAuthor;
+    }
+
+    public void setmAuthor(String mAuthor) {
+        this.mAuthor = mAuthor;
+    }
+
+    public String getmImageUrl() {
+        return mImageUrl;
+    }
+
+    public void setmImageUrl(String mImageUrl) {
+        this.mImageUrl = mImageUrl;
+    }
+
+    public Quotes(String Quote, String Author, String ImageUrl){
 
 
 
-        this.mQuote
+        this.mQuote = Quote;
+        this.mAuthor = Author;
+        this.mImageUrl = ImageUrl;
     }
 
 }
