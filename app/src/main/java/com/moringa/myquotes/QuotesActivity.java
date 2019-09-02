@@ -3,6 +3,7 @@ package com.moringa.myquotes;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.util.Log;
 import android.widget.AdapterView;
 import android.os.Bundle;
 import android.view.View;
@@ -60,7 +61,12 @@ public class QuotesActivity extends AppCompatActivity  {
             @Override
             public void onResponse(Call call, Response response) throws IOException  {
 
-
+                try {
+                    String jsonData = response.body().string();
+                    Log.v(TAG, jsonData);
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
 
             }
         });
