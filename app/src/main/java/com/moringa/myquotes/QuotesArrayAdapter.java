@@ -10,7 +10,7 @@ public class QuotesArrayAdapter extends ArrayAdapter {
 
     public QuotesArrayAdapter(Context mContext, String quotes, String[] mQuotes){
 
-        super(mContext,quotes);
+        super(mContext,mQuotes);
         this.mContext = mContext;
         this.mQuotes = mQuotes;
     }
