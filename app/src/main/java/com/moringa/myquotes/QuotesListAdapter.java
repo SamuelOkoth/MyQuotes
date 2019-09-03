@@ -15,7 +15,7 @@ import java.util.ArrayList;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class QuotesListAdapter extends RecyclerView.Adapter<QuotesListAdapter.QuotesViewHolder> {
+public abstract class QuotesListAdapter extends RecyclerView.Adapter<QuotesListAdapter.QuotesViewHolder> {
     private ArrayList<Quotes> mQuotes = new ArrayList<>();
     private Context mContext;
 
@@ -32,21 +32,6 @@ public class QuotesListAdapter extends RecyclerView.Adapter<QuotesListAdapter.Qu
         return viewHolder;
     }
 
-    @NonNull
-    @Override
-    public QuotesViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        return null;
-    }
-
-    @Override
-    public void onBindViewHolder(@NonNull QuotesViewHolder holder, int position) {
-
-    }
-
-    @Override
-    public int getItemCount() {
-        return 0;
-    }
 
 
     public class QuotesViewHolder extends RecyclerView.ViewHolder {
