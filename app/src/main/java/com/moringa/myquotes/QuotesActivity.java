@@ -1,6 +1,7 @@
 package com.moringa.myquotes;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.util.Log;
@@ -12,6 +13,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import java.io.IOException;
+import java.util.ArrayList;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -19,18 +21,23 @@ import okhttp3.Call;
 import okhttp3.Callback;
 import okhttp3.Response;
 
+
 import static android.os.Build.VERSION_CODES.Q;
 
 public class QuotesActivity extends AppCompatActivity  {
     public static final String TAG = QuotesActivity.class.getSimpleName();
- @BindView(R.id.QuotesEditText)TextView mTextview;
+ @BindView(R.id.QuotesTextView)TextView mTextview;
  @BindView(R.id.listView)ListView mListview;
+ @BindView(R.id.recyclerView)
+    RecyclerView mRecyclerView;
+    private QuotesListAdapter mAdapter;
 
-    private String[] Quotes = new String[] {"I've learned to ignore the negative people and just be a living example of confidence and self-love "
-             , "Corgito Ergo Sum ",
-            "Life is an Dream ", "Every Dog has its day","Diversity is what makes life interesting.","My mission in life is not merely to survive, but to thrive; and to do so with some passion, some compassion, some humor, and some style."
-
-             };
+//    private String[] Quotes = new String[] {"I've learned to ignore the negative people and just be a living example of confidence and self-love "
+//             , "Corgito Ergo Sum ",
+//            "Life is an Dream ", "Every Dog has its day","Diversity is what makes life interesting.","My mission in life is not merely to survive, but to thrive; and to do so with some passion, some compassion, some humor, and some style."
+//
+//             };
+        public ArrayList<Quotes> mQuotes = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,8 +45,7 @@ public class QuotesActivity extends AppCompatActivity  {
         setContentView(R.layout.activity_quotes);
         ButterKnife.bind(this);
 
-        ArrayAdapter adapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, Quotes);
-        mListview.setAdapter(adapter);
+
 
         TextView mQuotesEditText = (TextView) findViewById(R.id.QuotesEditText);
         Intent intent = getIntent();
@@ -51,6 +57,7 @@ public class QuotesActivity extends AppCompatActivity  {
 
         mQuotesEditText.setText("Here are all the available Quotes: " + Quotes);
 
+
         try {
             getQuotes(Quotes);
         } catch (IOException e) {
@@ -58,24 +65,36 @@ public class QuotesActivity extends AppCompatActivity  {
         }
 
     }
-    private void getQuotes(String Quotes) throws IOException {
+    private void getQuotes(final String Quotes) throws IOException {
         final QuoteService quoteService = new QuoteService();
         quoteService.findQuotes(Quotes, new Callback() {
             @Override
             public void onFailure(Call call, IOException e) {
 
+
+
             }
 
             @Override
-            public void onResponse(Call call, Response response) throws IOException  {
+            public void onResponse(Call call, Response response) throws IOException {
+                mQuotes = QuoteService.processResults(response);
+                QuotesActivity.this.runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        String[] restaurantNames = new String[mQuotes.size()];
+                        for(int i = 0; i<restaurantNames.length;i++){
+                            restaurantNames[i]=mQuotes.get(i).getmQuote();
+                        }
+                        ArrayAdapter adapter = new ArrayAdapter(QuotesActivity.this, android.R.layout.simple_list_item_1, mQuotes);
+                        mListview.setAdapter(adapter);
+                        for (Quotes quote : mQuotes) {
+                            Log.d(TAG, "Quote: " + quote.getmQuote());
+                            Log.d(TAG, "The author is: " + quote.getmAuthor());
+                            Log.d(TAG, "Image url: " + quote.getmImageUrl());
 
-                try {
-                    String jsonData = response.body().string();
-                    Log.v(TAG, jsonData);
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-
+                        }
+                    }
+                });
             }
         });
     }

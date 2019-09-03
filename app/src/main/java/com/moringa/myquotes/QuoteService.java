@@ -5,7 +5,6 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.IOException;
-import java.util.ArrayList;
 
 import okhttp3.Call;
 import okhttp3.Callback;
@@ -22,10 +21,10 @@ public class QuoteService {
                 .build();
 
         HttpUrl.Builder urlBuilder = HttpUrl.parse(Constants.rapidapi_BASE_URL).newBuilder();
-            urlBuilder.addQueryParameter(Constants.rapidapi_TOKEN_QUERY_PARAMETER, Quotes);
+        urlBuilder.addQueryParameter(Constants.rapidapi_TOKEN_QUERY_PARAMETER, Quotes);
         String url = urlBuilder.build().toString();
 
-        Request request= new Request.Builder()
+        Request request = new Request.Builder()
                 .url(url)
                 .header("Authorization", Constants.rapidapi_TOKEN)
                 .build();
@@ -34,13 +33,26 @@ public class QuoteService {
         call.enqueue(callback);
 
     }
-    public ArrayList<Quotes> processResults(Response response) throws JSONException {
+
+
+
+    public static void processResults(Response response) throws JSONException, IOException {
         String jsonData = response.body().string();
         JSONObject rapidapiJSON = new JSONObject(jsonData);
-        JSONArray businessesJSON = rapidapiJSON.getJSONArray("businesses");
+        JSONArray authorJSON = rapidapiJSON.getJSONArray("author");
 
-        if (response.isSuccessful()){
-            for (int i = 0;i < businessesJSON.length();i++)
+        if (response.isSuccessful()) {
+            for (int i = 0; i < authorJSON.length(); i++) {
+                JSONObject quotesJSON = authorJSON.getJSONObject(i);
+                String mQuote = quotesJSON.getString("Quotes");
+                String mAuthor = quotesJSON.getString("Author");
+                String mImageUrl = quotesJSON.getString("image_url");
+
+
+                Quotes quote = new Quotes(mQuote, mAuthor, mImageUrl);
+            }
+
         }
+
     }
 }

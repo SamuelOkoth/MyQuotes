@@ -8,20 +8,19 @@ public class QuotesArrayAdapter extends ArrayAdapter {
     private Context mContext;
     private String[] mQuotes;
 
-    public QuotesArrayAdapter(Context mContext, int resource, String[] mQuotes){
+    public QuotesArrayAdapter(Context mContext, String quotes, String[] mQuotes){
 
-        super(mContext,resource);
+        super(mContext,quotes);
         this.mContext = mContext;
         this.mQuotes = mQuotes;
     }
     @Override
-    public Object getItem(int position) {
-        String Quotes = mQuotes[position];
+    public Object getQuotes(String quotes) {
+        String Quotes = mQuotes[Integer.parseInt(quotes)];
         return String.format("%s \nServes great: %s", mQuotes);
     }
-    @Override
-    public int getCount() {
-        return mQuotes.length;
+    public String[] getQuotes() {
+        return mQuotes;
     }
 }
 
