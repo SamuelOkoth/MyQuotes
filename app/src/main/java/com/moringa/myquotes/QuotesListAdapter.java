@@ -21,7 +21,7 @@ public class QuotesListAdapter extends RecyclerView.Adapter<QuotesListAdapter.Qu
 
     public QuotesListAdapter(Context context, ArrayList<Quotes> quotes) {
         mContext = context;
-        mQuotes = Quotes;
+        mQuotes = quotes;
 
     }
 
