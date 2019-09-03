@@ -23,6 +23,7 @@ import okhttp3.Response;
 
 
 import static android.os.Build.VERSION_CODES.Q;
+import static com.moringa.myquotes.QuoteService.processResults;
 
 public class QuotesActivity extends AppCompatActivity  {
     public static final String TAG = QuotesActivity.class.getSimpleName();
@@ -77,7 +78,8 @@ public class QuotesActivity extends AppCompatActivity  {
 
             @Override
             public void onResponse(Call call, Response response) throws IOException {
-                mQuotes = QuoteService.processResults(response);
+                mQuotes = processResults(response);
+
                 QuotesActivity.this.runOnUiThread(new Runnable() {
                     @Override
                     public void run() {
