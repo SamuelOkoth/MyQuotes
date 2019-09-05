@@ -24,13 +24,13 @@ public class QuoteService {
         OkHttpClient client = new OkHttpClient.Builder()
                 .build();
 
-        HttpUrl.Builder urlBuilder = HttpUrl.parse(Constants.rapidapi_BASE_URL).newBuilder();
-        urlBuilder.addQueryParameter(Constants.rapidapi_TOKEN_QUERY_PARAMETER, Quotes);
+        HttpUrl.Builder urlBuilder = HttpUrl.parse(Constants.favqs_BASE_URL).newBuilder();
+        urlBuilder.addQueryParameter(Constants.favqs_KEY_QUERY_PARAMETER, Quotes);
         String url = urlBuilder.build().toString();
 
         Request request = new Request.Builder()
                 .url(url)
-                .header("Authorization", Constants.rapidapi_TOKEN)
+                .header("Authorization", Constants.favqs_KEY)
                 .build();
 
         Call call = client.newCall(request);

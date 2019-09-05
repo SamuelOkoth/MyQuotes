@@ -3,7 +3,6 @@ package com.moringa.myquotes;
 public class Quotes {
     private String mQuote;
     private String mAuthor;
-    private String mImageUrl;
 
 
     public String getmQuote() {
@@ -22,21 +21,15 @@ public class Quotes {
         this.mAuthor = mAuthor;
     }
 
-    public String getmImageUrl() {
-        return mImageUrl;
-    }
 
-    public void setmImageUrl(String mImageUrl) {
-        this.mImageUrl = mImageUrl;
-    }
 
-    public Quotes(String Quote, String Author, String ImageUrl){
+
+    public Quotes(String Quote, String Author){
 
 
 
         this.mQuote = Quote;
         this.mAuthor = Author;
-        this.mImageUrl = ImageUrl;
     }
 
 
