@@ -5,12 +5,12 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.util.Log;
-import android.widget.AdapterView;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
+
+import com.moringa.myquotes.services.QuoteService;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -21,11 +21,10 @@ import okhttp3.Call;
 import okhttp3.Callback;
 import okhttp3.Response;
 
-
-import static android.os.Build.VERSION_CODES.Q;
-
 public class QuotesActivity extends AppCompatActivity  {
     public static final String TAG = QuotesActivity.class.getSimpleName();
+
+
  @BindView(R.id.QuotesTextView)TextView mTextview;
  @BindView(R.id.listView)ListView mListview;
  @BindView(R.id.recyclerView)
@@ -91,7 +90,7 @@ public class QuotesActivity extends AppCompatActivity  {
                         for (Quotes quote : mQuotes) {
                             Log.d(TAG, "Quote: " + quote.getmQuote());
                             Log.d(TAG, "The author is: " + quote.getmAuthor());
-                            Log.d(TAG, "Image url: " + quote.getmImageUrl());
+
 
                         }
                     }

@@ -1,12 +1,12 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 29
+    compileSdkVersion 27
     buildToolsVersion "29.0.2"
     defaultConfig {
         applicationId "com.moringa.myquotes"
         minSdkVersion 15
-        targetSdkVersion 29
+        targetSdkVersion 27
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
@@ -20,7 +20,7 @@ android {
 
         buildTypes.each {
 
-            it.buildConfigField 'String', 'rapidapi_TOKEN', rapidapi_TOKEN
+            it.buildConfigField 'String', 'favqs_KEY', favqs_KEY
         }
 
     }
@@ -38,8 +38,14 @@ android {
         implementation files('libs/java-json.jar')
         implementation 'com.squareup.picasso:picasso:2.71828'
         implementation 'androidx.recyclerview:recyclerview:1.0.0'
-//        implementation 'com.github.SamuelOkoth:MyQuotes:-SNAPSHOT'
-//        implementation 'com.github.SamuelOkoth:MyQuotes:Tag'
+        implementation 'com.squareup.retrofit2:retrofit:2.1.0'
+        implementation 'com.squareup.retrofit2:converter-gson:2.1.0'
+        implementation 'com.squareup.picasso:picasso:2.71828'
+        implementation 'com.jakewharton.picasso:picasso2-okhttp3-downloader:1.1.0'
+        implementation 'org.parceler:parceler-api:1.1.12'
+        annotationProcessor 'org.parceler:parceler:1.1.12'
+        implementation 'com.android.support:appcompat-v7:27.1.1'
+        implementation 'com.android.support:design:27.1.1'
 
 
     }

@@ -1,14 +1,14 @@
-package com.moringa.myquotes;
+package com.moringa.myquotes.services;
+
+import com.moringa.myquotes.Constants;
+import com.moringa.myquotes.Quotes;
 
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-import org.json.XML;
 
 import java.io.IOException;
-import java.lang.reflect.Type;
 import java.util.ArrayList;
-import java.util.List;
 
 import okhttp3.Call;
 import okhttp3.Callback;
@@ -47,10 +47,10 @@ public class QuoteService {
             JSONArray jsonArray= new JSONArray(data);
             for(int i=0; i<jsonArray.length();i++){
                 JSONObject jsonObject = jsonArray.getJSONObject(i);
-                Quotes newQuote = new Quote("Quote","Author","imageUrl");
+                Quotes newQuote = new Quote("Quote","Author");
                 newQuote.getmAuthor();
                 newQuote.getmAuthor();
-                newQuote.getmImageUrl();
+
                 quotes.add(newQuote);
             }
 
@@ -64,9 +64,11 @@ public class QuoteService {
     }
 
     private static class Quote extends Quotes {
-        public Quote(String Quote, String Author, String ImageUrl) {
-            super("Quote","Author","imageUrl");
+        public Quote(String Quote, String Author) {
+            super("Quote","Author");
         }
+
+
     }
 }
 //    public static void processResults(Response response) throws JSONException, IOException {
