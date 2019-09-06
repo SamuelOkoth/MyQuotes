@@ -1,4 +1,3 @@
-
 package com.moringa.myquotes.models;
 
 import java.io.Serializable;
@@ -6,43 +5,75 @@ import java.util.List;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
-public class Quote implements Serializable
+public class Quote
 {
 
-    @SerializedName("id")
-    @Expose
-    private Integer id;
-    @SerializedName("favorites_count")
-    @Expose
-    private Integer favoritesCount;
-    @SerializedName("dialogue")
-    @Expose
-    private Boolean dialogue;
-    @SerializedName("favorite")
-    @Expose
-    private Boolean favorite;
     @SerializedName("tags")
     @Expose
     private List<String> tags = null;
-    @SerializedName("url")
+    @SerializedName("favorite")
     @Expose
-    private String url;
-    @SerializedName("upvotes_count")
-    @Expose
-    private Integer upvotesCount;
-    @SerializedName("downvotes_count")
-    @Expose
-    private Integer downvotesCount;
-    @SerializedName("author")
-    @Expose
-    private String author;
+    private Boolean favorite;
     @SerializedName("author_permalink")
     @Expose
     private String authorPermalink;
     @SerializedName("body")
     @Expose
     private String body;
+    @SerializedName("id")
+    @Expose
+    private Integer id;
+    @SerializedName("favorites_count")
+    @Expose
+    private Integer favoritesCount;
+    @SerializedName("upvotes_count")
+    @Expose
+    private Integer upvotesCount;
+    @SerializedName("downvotes_count")
+    @Expose
+    private Integer downvotesCount;
+    @SerializedName("dialogue")
+    @Expose
+    private Boolean dialogue;
+    @SerializedName("author")
+    @Expose
+    private String author;
+    @SerializedName("url")
+    @Expose
+    private String url;
     private final static long serialVersionUID = -7268731812471705980L;
+
+    public List<String> getTags() {
+        return tags;
+    }
+
+    public void setTags(List<String> tags) {
+        this.tags = tags;
+    }
+
+    public Boolean getFavorite() {
+        return favorite;
+    }
+
+    public void setFavorite(Boolean favorite) {
+        this.favorite = favorite;
+    }
+
+    public String getAuthorPermalink() {
+        return authorPermalink;
+    }
+
+    public void setAuthorPermalink(String authorPermalink) {
+        this.authorPermalink = authorPermalink;
+    }
+
+    public String getBody() {
+        return body;
+    }
+
+    public void setBody(String body) {
+        this.body = body;
+    }
 
     public Integer getId() {
         return id;
@@ -58,38 +89,6 @@ public class Quote implements Serializable
 
     public void setFavoritesCount(Integer favoritesCount) {
         this.favoritesCount = favoritesCount;
-    }
-
-    public Boolean getDialogue() {
-        return dialogue;
-    }
-
-    public void setDialogue(Boolean dialogue) {
-        this.dialogue = dialogue;
-    }
-
-    public Boolean getFavorite() {
-        return favorite;
-    }
-
-    public void setFavorite(Boolean favorite) {
-        this.favorite = favorite;
-    }
-
-    public List<String> getTags() {
-        return tags;
-    }
-
-    public void setTags(List<String> tags) {
-        this.tags = tags;
-    }
-
-    public String getUrl() {
-        return url;
-    }
-
-    public void setUrl(String url) {
-        this.url = url;
     }
 
     public Integer getUpvotesCount() {
@@ -108,6 +107,14 @@ public class Quote implements Serializable
         this.downvotesCount = downvotesCount;
     }
 
+    public Boolean getDialogue() {
+        return dialogue;
+    }
+
+    public void setDialogue(Boolean dialogue) {
+        this.dialogue = dialogue;
+    }
+
     public String getAuthor() {
         return author;
     }
@@ -116,20 +123,12 @@ public class Quote implements Serializable
         this.author = author;
     }
 
-    public String getAuthorPermalink() {
-        return authorPermalink;
+    public String getUrl() {
+        return url;
     }
 
-    public void setAuthorPermalink(String authorPermalink) {
-        this.authorPermalink = authorPermalink;
-    }
-
-    public String getBody() {
-        return body;
-    }
-
-    public void setBody(String body) {
-        this.body = body;
+    public void setUrl(String url) {
+        this.url = url;
     }
 
 }

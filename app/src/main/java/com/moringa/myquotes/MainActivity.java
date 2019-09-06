@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
         mFindQuotesButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(MainActivity.this, "Welcome to The Quotes World", Toast.LENGTH_LONG).show();
+                Toast.makeText(MainActivity.this, "Welcome to The QuotesResponse World", Toast.LENGTH_LONG).show();
                 String location = mQuotesEditText.getText().toString();
                 Intent intent = new Intent(MainActivity.this, QuotesActivity.class);
                 intent.putExtra("QuotesActivity", location);
