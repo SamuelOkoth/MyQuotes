@@ -9,5 +9,5 @@ import retrofit2.http.Query;
 public interface Quoteservices {
 
     @GET("app/quote")
-    Call<Result> getQuote(@Query("Quote") String Quote, @Query("favqs_KEY") String favqs_KEY);
+    Call<Result> getQuotes(@Query("Quote") String Quote, @Query("favqs_KEY") String favqs_KEY);
 }

@@ -9,6 +9,8 @@ import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.moringa.myquotes.models.Quote;
+
 import java.util.ArrayList;
 
 import butterknife.BindView;

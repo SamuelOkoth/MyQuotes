@@ -53,24 +53,3 @@ public class QuoteService {
         }
     }
 }
-//    public static void processResults(Response response) throws JSONException, IOException {
-//        String jsonData = response.body().string();
-//        JSONObject rapidapiJSON = new JSONObject(jsonData);
-//        JSONArray authorJSON = rapidapiJSON.getJSONArray("author");
-//
-//        if (response.isSuccessful()) {
-//            for (int i = 0; i < authorJSON.length(); i++) {
-//                JSONObject quotesJSON = authorJSON.getJSONObject(i);
-//                String mQuote = quotesJSON.getString("Quotes");
-//                String mAuthor = quotesJSON.getString("Author");
-//                String mImageUrl = quotesJSON.getString("image_url");
-//
-//
-//                Quotes quote = new Quotes(mQuote, mAuthor, mImageUrl);
-//            }
-//
-//        }
-//
-//    }
-
-
