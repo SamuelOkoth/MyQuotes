@@ -15,5 +15,5 @@ public interface Quoteservices {
             @Query("favqs_KEY") String favqs_KEY,
             @Query("quote") String quote
 
-            );
+    );
 }

@@ -4,9 +4,10 @@ package com.moringa.myquotes.models;
         import java.util.List;
         import com.google.gson.annotations.Expose;
         import com.google.gson.annotations.SerializedName;
+        import com.moringa.myquotes.QuotesRepository;
         import com.moringa.myquotes.services.Quoteservices;
 
-public class QuotesResponse {
+public class QuotesResponse  {
 
 
     @SerializedName("page")
@@ -20,9 +21,10 @@ public class QuotesResponse {
     private List<Quote> quotes = null;
     private final static long serialVersionUID = 4157856814347337187L;
 
-    public QuotesResponse(Quoteservices quoteservices) {
-
-    }
+//    public QuotesResponse(Quoteservices quoteservices) {
+//        super();
+//
+//    }
 
     public Integer getPage() {
         return page;

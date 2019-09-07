@@ -13,22 +13,24 @@ import static com.moringa.myquotes.Constants.favqs_KEY;
 import static com.moringa.myquotes.Constants.favqs_KEY_QUERY_PARAMETER;
 
 public class QuotesRepository {
-    private static QuotesResponse quotesResponse;
+    private static QuotesRepository quotesRepository;
     private Quoteservices api;
 
     private QuotesRepository(Quoteservices api) {
         this.api = api;
     }
 
-    public static QuotesResponse getInstance() {
-        if (quotesResponse == null) {
+
+
+    public static QuotesRepository getInstance() {
+        if (quotesRepository == null) {
             Retrofit retrofit = new Retrofit.Builder()
                     .baseUrl(Constants.favqs_BASE_URL)
                     .addConverterFactory(GsonConverterFactory.create())
                     .build();
-            quotesResponse = new QuotesResponse(retrofit.create(Quoteservices.class));
+            quotesRepository = new QuotesRepository(retrofit.create(Quoteservices.class));
         }
-        return quotesResponse;
+        return quotesRepository;
     }
 
     public void getQuotes(final RetrofitCallBack callback) {
@@ -47,9 +49,14 @@ public class QuotesRepository {
                 }
             }
 
+            @Override
+            public void onFailure(Call<QuotesResponse>call,Throwable t){
+                callback.onError();
+            }
+
         });
-        }
     }
+}
 
 
 

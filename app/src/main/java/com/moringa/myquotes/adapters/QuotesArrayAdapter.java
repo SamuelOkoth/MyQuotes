@@ -10,10 +10,20 @@ public class QuotesArrayAdapter extends ArrayAdapter {
     private ArrayList<String> mAuthors = new ArrayList<String>();
     private ArrayList<String> mQuotes = new ArrayList<String>();
 
-    public QuotesArrayAdapter(Context mContext, int resource, ArrayList<String> mAuthors, ArrayList<String> mQuotes) {
+    public QuotesArrayAdapter(Context mContext, int resource, ArrayList<String> mAuthors, ArrayList<String> mQuotes){
         super(mContext, resource);
         this.mContext = mContext;
         this.mAuthors = mAuthors;
         this.mQuotes = mQuotes;
+    }
+    @Override
+    public Object getItem(int position){
+        String author = mAuthors.get(position);
+        String quote = mQuotes.get(position);
+        return String.format( "\n %S WROTE %S\n ", author, quote);
+    }
+    @Override
+    public int getCount(){
+        return mAuthors.size();
     }
 }

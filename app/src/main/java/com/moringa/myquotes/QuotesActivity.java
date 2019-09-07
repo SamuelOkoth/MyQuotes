@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.os.Bundle;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.moringa.myquotes.models.Quote;
 
@@ -15,25 +16,14 @@ import java.util.List;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-//import okhttp3.Call;
-//import okhttp3.Callback;
-//import okhttp3.Response;
-
 
 public class QuotesActivity extends AppCompatActivity  {
-    public static final String TAG = QuotesActivity.class.getSimpleName();
-
-
 
     private QuotesAdapter adapter;
     private QuotesRepository quotesRepository;
     private List<Quote> mQuotes;
 
-
-
     @BindView(R.id.textView2)  RecyclerView mRecyclerView;
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -45,7 +35,7 @@ public class QuotesActivity extends AppCompatActivity  {
     }
 
 
-    private void getQuotes(final List<Quote> quotes) {
+    private void getQuotes(final List<Quote>quotes) {
         quotesRepository.getQuotes(new RetrofitCallBack() {
             @Override
             public void onSuccess(List<Quote> quotes) {
@@ -57,12 +47,17 @@ public class QuotesActivity extends AppCompatActivity  {
             }
             @Override
             public void onError() {
-                return;
+                showError();
             }
         });
-        }
-
     }
+
+    public void showError(){
+        Toast.makeText(QuotesActivity.this, "Network Error", Toast.LENGTH_SHORT).show();
+    }
+
+
+}
 
 //
 // @BindView(R.id.QuotesTextView) TextView mTextview;
