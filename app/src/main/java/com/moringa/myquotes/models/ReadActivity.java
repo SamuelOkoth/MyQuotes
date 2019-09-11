@@ -21,6 +21,8 @@ import okhttp3.Response;
 
 public class ReadActivity extends AppCompatActivity {
 
+
+
     public static final String TAG = ReadActivity.class.getSimpleName();
     private SharedPreferences mSharedPreferences;
     private String mRecentName;

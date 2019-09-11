@@ -39,32 +39,37 @@ android {
 
     dependencies {
         implementation fileTree(dir: 'libs', include: ['*.jar'])
+        implementation files('libs/java-json.jar')
+
+        implementation 'com.android.support:appcompat-v7:29.1.1'
+        implementation 'com.android.support:design:29.1.1'
+
         implementation 'androidx.appcompat:appcompat:1.1.0-rc01'
+        implementation 'androidx.recyclerview:recyclerview:1.0.0'
         implementation 'androidx.constraintlayout:constraintlayout:2.0.0-beta2'
+
         testImplementation 'junit:junit:4.13-beta-3'
         androidTestImplementation 'androidx.test:runner:1.3.0-alpha02'
         androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0-alpha02'
+
+        implementation 'com.jakewharton.picasso:picasso2-okhttp3-downloader:1.1.0'
         implementation 'com.jakewharton:butterknife:8.8.1'
         annotationProcessor 'com.jakewharton:butterknife-compiler:10.1.0'
-        implementation 'com.squareup.okhttp3:okhttp:4.1.0'
-        implementation files('libs/java-json.jar')
+
         implementation 'com.squareup.picasso:picasso:2.71828'
-        implementation 'androidx.recyclerview:recyclerview:1.0.0'
+        implementation 'com.squareup.okhttp3:okhttp:4.1.0'
         implementation 'com.squareup.retrofit2:retrofit:2.1.0'
         implementation 'com.squareup.retrofit2:converter-gson:2.1.0'
-        implementation 'com.squareup.picasso:picasso:2.71828'
-        implementation 'com.google.firebase:firebase-analytics:17.2.0'
-        implementation 'com.jakewharton.picasso:picasso2-okhttp3-downloader:1.1.0'
+
         implementation 'org.parceler:parceler-api:1.1.12'
         annotationProcessor 'org.parceler:parceler:1.1.12'
-        implementation 'com.android.support:appcompat-v7:29.1.1'
-        implementation 'com.android.support:design:29.1.1'
+
         implementation 'com.firebaseui:firebase-ui-database:3.3.1'
-        implementation 'com.google.firebase:firebase-auth:19.0.0'
+
         //Add firebase SDK
-        implementation 'com.google.firebase:firebase-core:17.2.0'
-
-
+        implementation 'com.google.firebase:firebase-auth:19.0.0'
+        implementation 'com.google.firebase:firebase-database:19.1.0'
     }
+
 apply plugin: 'com.google.gms.google-services'
 
