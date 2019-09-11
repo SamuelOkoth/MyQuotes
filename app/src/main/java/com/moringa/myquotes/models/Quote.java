@@ -1,11 +1,5 @@
 package com.moringa.myquotes.models;
 
-import java.io.Serializable;
-import java.util.List;
-import com.google.gson.annotations.Expose;
-import com.google.gson.annotations.SerializedName;
-import org.parceler.Parcel;
-
 public class Quote{
 
 
@@ -93,7 +87,10 @@ public class Quote{
             this.index = index;
         }
 
+    public int getBody() {
+        return 0;
     }
+}
 
 //{
 //

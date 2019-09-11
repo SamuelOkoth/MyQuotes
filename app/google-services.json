@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "462211566632",
+    "firebase_url": "https://myquotes-fa118.firebaseio.com",
+    "project_id": "myquotes-fa118",
+    "storage_bucket": "myquotes-fa118.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:462211566632:android:00a84d901e3bb54382f91d",
+        "android_client_info": {
+          "package_name": "com.moringa.myquotes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "462211566632-j48cetbjle30ggurieqc5ch556i73pjd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.moringa.myquotes",
+            "certificate_hash": "0605db6d116d2cd1b995cb5300575151a0834569"
+          }
+        },
+        {
+          "client_id": "462211566632-er2gkcbctvcn982el8hojvhv1bkv26bm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDCg3R5fah7s1icz8GJT0r6mDvOzO893-E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "462211566632-er2gkcbctvcn982el8hojvhv1bkv26bm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

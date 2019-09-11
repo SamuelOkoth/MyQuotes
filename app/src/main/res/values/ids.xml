@@ -4,4 +4,6 @@
     <item name="AuthorTextView" type="id" />
     <item name="Quotes" type="id" />
     <item name="recyclerView" type="id" />
+    <item name="item_click_support" type="id" />
+    <item name="action_logout" type="id" />
 </resources>

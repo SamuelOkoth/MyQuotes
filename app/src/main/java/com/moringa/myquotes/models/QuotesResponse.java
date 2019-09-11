@@ -1,11 +1,11 @@
 package com.moringa.myquotes.models;
 
-        import java.io.Serializable;
-        import java.util.List;
         import com.google.gson.annotations.Expose;
-        import com.google.gson.annotations.SerializedName;
-        import com.moringa.myquotes.QuotesRepository;
-        import com.moringa.myquotes.services.Quoteservices;
+import com.google.gson.annotations.SerializedName;
+
+import java.util.List;
+
+//        import com.moringa.myquotes.QuotesRepository;
 
 public class QuotesResponse  {
 
