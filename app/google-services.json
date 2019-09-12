@@ -1,21 +1,21 @@
 {
   "project_info": {
-    "project_number": "307930810139",
-    "firebase_url": "https://quotes-bb9fc.firebaseio.com",
-    "project_id": "quotes-bb9fc",
-    "storage_bucket": "quotes-bb9fc.appspot.com"
+    "project_number": "420231197927",
+    "firebase_url": "https://quotes-1e2c0.firebaseio.com",
+    "project_id": "quotes-1e2c0",
+    "storage_bucket": "quotes-1e2c0.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:307930810139:android:f72fdc571ca05cf29a75be",
+        "mobilesdk_app_id": "1:420231197927:android:f9f05c5425e1be43689e42",
         "android_client_info": {
           "package_name": "com.moringa.myquotes"
         }
       },
       "oauth_client": [
         {
-          "client_id": "307930810139-t65h4pp1qvqfvij0db8uqhr8blctmlc6.apps.googleusercontent.com",
+          "client_id": "420231197927-dip75rk7e1rot09lvpaqbb330th2mhuq.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.moringa.myquotes",
@@ -23,20 +23,20 @@
           }
         },
         {
-          "client_id": "307930810139-s3eb1cguvfor0ddaik9rb2cjkgkh0e4i.apps.googleusercontent.com",
+          "client_id": "420231197927-g5cese2uguv5js1fqibp1j9crn1f3add.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCVcWK7Uun6lxCCgnB-Wtwo5Zigx8usaf8"
+          "current_key": "AIzaSyAgN2beZlJn2C-otj1m2Do1q--jilfYkr0"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "307930810139-s3eb1cguvfor0ddaik9rb2cjkgkh0e4i.apps.googleusercontent.com",
+              "client_id": "420231197927-g5cese2uguv5js1fqibp1j9crn1f3add.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

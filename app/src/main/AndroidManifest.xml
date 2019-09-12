@@ -12,8 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name="MainActivity"
-            android:theme="@style/NoActionBarTheme">
+            android:name="MainActivity">
         </activity>
         <activity android:name=".SavedReadListActivity">
             <meta-data
