@@ -76,25 +76,5 @@ public class ReadDetailFragment extends Fragment implements View.OnClickListener
     }
 
 }
-//    @Override
-//    public void onClick(View v) {
-//
-//        if (v == mSaveQuoteButton) {
-//            FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
-//            String uid = user.getUid();
-//
-//            DatabaseReference readRef = FirebaseDatabase
-//                    .getInstance()
-//                    .getReference(Constants.FIREBASE_CHILD_QUOTES)
-//                    .child(uid);
-//
-//            DatabaseReference pushRef = readRef.push();
-//            String pushId = pushRef.getKey();
-//            mQuote.setPushId(pushId);
-//            pushRef.setValue(mQuote);
-//
-//            Toast.makeText(getContext(), "Saved", Toast.LENGTH_SHORT).show();
-//        }
-//    }
 
 

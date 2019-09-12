@@ -1,9 +1,6 @@
 package com.moringa.myquotes;
 
 public class Constants {
-//  public static final String favqs_KEY  = BuildConfig.favqs_KEY;
-//   public static final String favqs_BASE_URL = "https://favqs.com/";
-//    public static final String favqs_KEY_QUERY_PARAMETER = "quotes";
 
 
  public static final String QUOTE_BASE_URL = "http://quotes.stormconsultancy.co.uk/popular.json";
