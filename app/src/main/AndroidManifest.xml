@@ -22,6 +22,7 @@
         <activity android:name=".SavedReadListActivity" />
         <activity android:name=".models.ReadActivity"/>
         <activity android:name=".AddActivity"/>
+        <activity android:name=".PicActivity"/>
     </application>
 
 </manifest>
