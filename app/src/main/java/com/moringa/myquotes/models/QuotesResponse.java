@@ -3,14 +3,16 @@ package com.moringa.myquotes.models;
         import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
-import java.util.List;
+        import org.parceler.Parcel;
+
+        import java.util.List;
 
 //        import com.moringa.myquotes.QuotesRepository;
-
+@Parcel
 public class QuotesResponse  {
 
 
-    @SerializedName("page")
+@SerializedName("page")
     @Expose
     private Integer page;
     @SerializedName("last_page")

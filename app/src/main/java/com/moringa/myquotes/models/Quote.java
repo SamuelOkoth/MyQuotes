@@ -1,5 +1,9 @@
 package com.moringa.myquotes.models;
 
+import org.parceler.Parcel;
+
+@Parcel
+
 public class Quote{
 
 

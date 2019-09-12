@@ -23,6 +23,7 @@
         <activity android:name=".models.ReadActivity"/>
         <activity android:name=".AddActivity"/>
         <activity android:name=".PicActivity"/>
+        <activity android:name=".ReadDetailActivity"/>
     </application>
 
 </manifest>
