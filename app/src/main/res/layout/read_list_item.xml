@@ -15,7 +15,7 @@
         android:layout_marginTop="5dp"
         android:layout_marginRight="3dp"
         android:scaleType="centerCrop"
-        android:src="@drawable/background" />
+        android:src="@drawable/back1" />
 
     <LinearLayout
         android:orientation="vertical"

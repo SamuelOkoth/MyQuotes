@@ -10,7 +10,7 @@
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:gravity="bottom|left"
-            android:src="@drawable/background"/>
+            android:src="@drawable/ic_drag"/>
 
     </RelativeLayout>
 

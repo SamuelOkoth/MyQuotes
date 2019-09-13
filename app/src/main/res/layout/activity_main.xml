@@ -16,7 +16,7 @@
         android:layout_marginLeft="-7dp"
         android:layout_marginTop="-22dp"
         android:adjustViewBounds="true"
-        app:srcCompat="@drawable/download" />
+        app:srcCompat="@drawable/blue7" />
 
     <TextView
         android:id="@+id/quotes"
@@ -81,9 +81,4 @@
         android:hint="Enter author's name"
         android:text=""/>
 
-
-
 </RelativeLayout>
-
-
-
