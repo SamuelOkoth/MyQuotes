@@ -17,7 +17,7 @@
         android:layout_marginStart="0dp"
         android:layout_marginLeft="0dp"
         android:layout_marginTop="0dp"
-        app:srcCompat="@drawable/blue7" />
+        app:srcCompat="@drawable/blue777" />
 
 
     <TextView
