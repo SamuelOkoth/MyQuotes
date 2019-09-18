@@ -1,6 +1,5 @@
 # MyQuotes
-An application that shows users quotes of different dimensions of life
-week1
+An application that shows users quotes of different quotes in coding ,they can also add a quote and save a quote but before all that they have to sign up and later log in  to perform the nities of the application
  
 ## Developer
 Samuel Okoth

@@ -81,9 +81,4 @@
         android:hint="Enter author's name"
         android:text=""/>
 
-
-
 </RelativeLayout>
-
-
-
