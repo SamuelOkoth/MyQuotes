@@ -47,6 +47,7 @@ public class MainActivity extends AppCompatActivity  {
     private FirebaseAuth.AuthStateListener mAuthListener;
 
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         mSearchedAuthorReference = FirebaseDatabase
@@ -55,6 +56,10 @@ public class MainActivity extends AppCompatActivity  {
                 .child(FIREBASE_CHILD_SEARCHED_AUTHOR);
 
         mSearchedAuthorReferenceListener = mSearchedAuthorReference.addValueEventListener(new ValueEventListener() {
+
+
+
+
 
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {

@@ -11,4 +11,9 @@ public class PicActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pic);
     }
+
+
+
+    public void radioClick(android.view.View view) {
+    }
 }

@@ -19,6 +19,8 @@ public class FirebaseReadViewHolder extends RecyclerView.ViewHolder implements I
     public TextView mQuoteTextView;
     public TextView mAuthor;
 
+
+
     public FirebaseReadViewHolder(View itemView) {
         super(itemView);
         mView = itemView;
@@ -44,4 +46,7 @@ public class FirebaseReadViewHolder extends RecyclerView.ViewHolder implements I
         Log.d("Animation", "onItemClear");
         // we will add animations here
     }
+
+
+
 }

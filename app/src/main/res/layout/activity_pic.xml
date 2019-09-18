@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
-
+    android:layout_height="match_parent"
+    tools:context=".PicActivity">
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="match_parent"
@@ -13,9 +12,84 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="-7dp"
-        android:layout_marginLeft="-7dp"
-        android:layout_marginTop="-22dp"
         android:adjustViewBounds="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
         app:srcCompat="@drawable/downloaded" />
-</LinearLayout>
+
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="43dp"
+        android:text="Picture story"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/instructions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="104dp"
+        android:text="Click a  button to display a story"
+        android:textSize="20sp" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="145dp">
+
+        <RadioButton
+            android:id="@+id/easyButton"
+            android:checked="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Easy"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"
+            android:onClick="radioClick"/>
+        <RadioButton
+            android:id="@+id/semiButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Semi"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"
+            android:onClick="radioClick"/>
+        <RadioButton
+            android:id="@+id/teamButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Team"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"
+            android:onClick="radioClick"/>
+        <RadioButton
+            android:id="@+id/outButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Out"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"
+            android:onClick="radioClick"/>
+
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/images"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="150dp"
+        app:srcCompat="@drawable/downloaded" />
+
+
+</RelativeLayout>

@@ -9,17 +9,17 @@ public class Quote{
 
         //    @SerializedName("author")
 //    @Expose
-        private String author;
+         String author;
         //    @SerializedName("id")
 //    @Expose
-        private Integer id;
+         Integer id;
         //    @SerializedName("quote")
 //    @Expose
-        private String quote;
+         String quote;
         //    @SerializedName("permalink")
 //    @Expose
-        private String permalink;
-        private String pushId;
+         String permalink;
+         String pushId;
         String index;
 
         /**
