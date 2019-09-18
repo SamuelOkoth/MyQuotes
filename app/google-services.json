@@ -1,42 +1,42 @@
 {
   "project_info": {
-    "project_number": "672488330959",
-    "firebase_url": "https://quotes-7daea.firebaseio.com",
-    "project_id": "quotes-7daea",
-    "storage_bucket": "quotes-7daea.appspot.com"
+    "project_number": "420231197927",
+    "firebase_url": "https://quotes-1e2c0.firebaseio.com",
+    "project_id": "quotes-1e2c0",
+    "storage_bucket": "quotes-1e2c0.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:672488330959:android:b6ba37dcd863f721",
+        "mobilesdk_app_id": "1:420231197927:android:f9f05c5425e1be43689e42",
         "android_client_info": {
-          "package_name": "com.example.quotes"
+          "package_name": "com.moringa.myquotes"
         }
       },
       "oauth_client": [
         {
-          "client_id": "672488330959-hu37udmg51r36h84ri2cnuooto9b7juj.apps.googleusercontent.com",
+          "client_id": "420231197927-dip75rk7e1rot09lvpaqbb330th2mhuq.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.example.quotes",
-            "certificate_hash": "ab3b28e9799c6882a703cf297e02b51a972376f2"
+            "package_name": "com.moringa.myquotes",
+            "certificate_hash": "0605db6d116d2cd1b995cb5300575151a0834569"
           }
         },
         {
-          "client_id": "672488330959-vpnl3mru3ck65ep4k3mied6015fg6lmv.apps.googleusercontent.com",
+          "client_id": "420231197927-g5cese2uguv5js1fqibp1j9crn1f3add.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyClcbs9FN2EHA_rZ1xpLpbXV3TVZC_kius"
+          "current_key": "AIzaSyAgN2beZlJn2C-otj1m2Do1q--jilfYkr0"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "672488330959-vpnl3mru3ck65ep4k3mied6015fg6lmv.apps.googleusercontent.com",
+              "client_id": "420231197927-g5cese2uguv5js1fqibp1j9crn1f3add.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
