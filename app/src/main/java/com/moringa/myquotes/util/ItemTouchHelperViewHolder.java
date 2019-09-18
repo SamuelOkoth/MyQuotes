@@ -1,4 +1,4 @@
-package com.example.quotes.util;
+package com.moringa.myquotes.util;
 
 public interface ItemTouchHelperViewHolder {
     void onItemSelected();

@@ -1,4 +1,4 @@
-package com.example.quotes;
+package com.moringa.myquotes;
 
 import android.content.Context;
 import android.content.Intent;
@@ -9,9 +9,6 @@ import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
 
-import com.example.quotes.models.Quote;
-import com.example.quotes.util.ItemTouchHelperAdapter;
-import com.example.quotes.util.OnStartDragListener;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
 import com.google.firebase.database.ChildEventListener;
@@ -19,6 +16,9 @@ import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.Query;
+import com.moringa.myquotes.models.Quote;
+import com.moringa.myquotes.util.ItemTouchHelperAdapter;
+import com.moringa.myquotes.util.OnStartDragListener;
 
 import org.parceler.Parcels;
 

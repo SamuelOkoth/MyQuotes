@@ -1,7 +1,4 @@
-package com.example.quotes;
-
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
+package com.moringa.myquotes;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
@@ -12,6 +9,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -101,7 +101,7 @@ public class CreateAccountActivity extends AppCompatActivity implements View.OnC
                             createFirebaseUserProfile(task.getResult().getUser());
                         } else {
                             Toast.makeText(CreateAccountActivity.this, "Authentication failed.",
-                                    Toast.LENGTH_SHORT).show();
+                                           Toast.LENGTH_SHORT).show();
                         }
                     }
                 });

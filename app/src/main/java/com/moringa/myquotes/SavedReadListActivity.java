@@ -1,20 +1,23 @@
-package com.example.quotes;
+package com.moringa.myquotes;
 
+
+import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.ItemTouchHelper;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-import android.os.Bundle;
-import com.example.quotes.models.Quote;
-import com.example.quotes.util.OnStartDragListener;
-import com.example.quotes.util.SimpleItemTouchHelperCallback;
+
 import com.firebase.ui.database.FirebaseRecyclerOptions;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
+import com.moringa.myquotes.models.Quote;
+import com.moringa.myquotes.util.OnStartDragListener;
+import com.moringa.myquotes.util.SimpleItemTouchHelperCallback;
+
 import butterknife.BindView;
 import butterknife.ButterKnife;
 

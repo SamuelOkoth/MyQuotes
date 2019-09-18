@@ -1,11 +1,8 @@
-package com.example.quotes;
+package com.moringa.myquotes;
 
-import android.content.ClipData;
 import android.view.View;
 
 import androidx.recyclerview.widget.RecyclerView;
-
-import butterknife.BindView;
 
 public class ItemClickSupport {
 

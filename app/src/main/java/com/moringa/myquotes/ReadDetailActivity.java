@@ -1,18 +1,19 @@
-package com.example.quotes;
+package com.moringa.myquotes;
+
+import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
-import android.os.Bundle;
-
-import com.example.quotes.models.Quote;
-
+import com.moringa.myquotes.models.Quote;
 import org.parceler.Parcels;
 
 import java.util.ArrayList;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+
+
 
 public class ReadDetailActivity extends AppCompatActivity {
 

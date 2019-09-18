@@ -1,13 +1,17 @@
-package com.example.quotes;
+package com.moringa.myquotes;
+
+import android.content.SharedPreferences;
+import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-import android.content.SharedPreferences;
-import android.os.Bundle;
-import com.example.quotes.models.Quote;
+
+import com.moringa.myquotes.models.Quote;
+
 import java.io.IOException;
-import java.util.*;
+import java.util.ArrayList;
+
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import okhttp3.Call;

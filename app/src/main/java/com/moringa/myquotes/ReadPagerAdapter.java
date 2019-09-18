@@ -1,11 +1,10 @@
-package com.example.quotes;
+package com.moringa.myquotes;
 
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
-import com.example.quotes.ReadDetailFragment;
-import com.example.quotes.models.Quote;
+import com.moringa.myquotes.models.Quote;
 
 import java.util.ArrayList;
 

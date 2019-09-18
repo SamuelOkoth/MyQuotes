@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.quotes">
+    package="com.moringa.myquotes">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -11,26 +11,26 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SavedReadListActivity"></activity>
-        <activity android:name=".ReadDetailActivity" />
-        <activity android:name=".MainActivity" />
-        <activity android:name=".CreateAccountActivity" />
-        <activity android:name=".PicActivity">
+        <activity android:name="com.example.com.moringa.myquotes.SavedReadListActivity"></activity>
+        <activity android:name="com.example.com.moringa.myquotes.ReadDetailActivity" />
+        <activity android:name="com.example.com.moringa.myquotes.MainActivity" />
+        <activity android:name="com.example.com.moringa.myquotes.CreateAccountActivity" />
+        <activity android:name="com.example.com.moringa.myquotes.PicActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.quotes.MainActivity" />
+                android:value="com.example.com.moringa.myquotes.MainActivity" />
         </activity>
-        <activity android:name=".ReadActivity">
+        <activity android:name="com.example.com.moringa.myquotes.ReadActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.quotes.MainActivity" />
+                android:value="com.example.com.moringa.myquotes.MainActivity" />
         </activity>
-        <activity android:name=".AddActivity">
+        <activity android:name="com.example.com.moringa.myquotes.AddActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.quotes.MainActivity" />
+                android:value="com.example.com.moringa.myquotes.MainActivity" />
         </activity>
-        <activity android:name=".LoginActivity">
+        <activity android:name="com.example.com.moringa.myquotes.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

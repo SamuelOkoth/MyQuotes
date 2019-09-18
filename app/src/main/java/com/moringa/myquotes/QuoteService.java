@@ -1,6 +1,6 @@
-package com.example.quotes;
+package com.moringa.myquotes;
 
-import com.example.quotes.models.Quote;
+import com.moringa.myquotes.models.Quote;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -8,12 +8,11 @@ import org.json.JSONObject;
 
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.List;
 
 import okhttp3.Call;
+import okhttp3.Callback;
 import okhttp3.HttpUrl;
 import okhttp3.OkHttpClient;
-import okhttp3.Callback;
 import okhttp3.Request;
 import okhttp3.Response;
 

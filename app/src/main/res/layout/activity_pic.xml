@@ -16,11 +16,8 @@
         android:layout_marginStart="0dp"
         android:layout_marginLeft="0dp"
         android:layout_marginTop="0dp"
-<<<<<<< HEAD
-        app:srcCompat="@drawable/downloaded" />
-=======
         app:srcCompat="@drawable/blue777" />
->>>>>>> 1724c12028cf399ae711177ed6559b3b723ce621
+
 
 
     <TextView
@@ -93,11 +90,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="150dp"
-<<<<<<< HEAD
-        app:srcCompat="@drawable/downloaded" />
-=======
         app:srcCompat="@drawable/easy" />
->>>>>>> 1724c12028cf399ae711177ed6559b3b723ce621
+
 
 
 </RelativeLayout>

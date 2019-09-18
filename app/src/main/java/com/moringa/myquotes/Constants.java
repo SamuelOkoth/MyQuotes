@@ -1,4 +1,4 @@
-package com.example.quotes;
+package com.moringa.myquotes;
 
 public class Constants {
     public static final String QUOTE_BASE_URL = "http://quotes.stormconsultancy.co.uk/popular.json";

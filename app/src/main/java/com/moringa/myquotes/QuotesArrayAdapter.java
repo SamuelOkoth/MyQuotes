@@ -1,4 +1,4 @@
-package com.example.quotes;
+package com.moringa.myquotes;
 
 import android.content.Context;
 import android.widget.ArrayAdapter;

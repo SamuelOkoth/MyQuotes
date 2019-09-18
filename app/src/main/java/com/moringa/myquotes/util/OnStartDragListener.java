@@ -1,4 +1,4 @@
-package com.example.quotes.util;
+package com.moringa.myquotes.util;
 
 import androidx.recyclerview.widget.RecyclerView;
 

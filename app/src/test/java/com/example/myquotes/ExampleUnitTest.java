@@ -1,4 +1,4 @@
-package com.example.quotes;
+package com.example.myquotes;
 
 import org.junit.Test;
 

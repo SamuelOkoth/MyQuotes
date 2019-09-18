@@ -1,20 +1,16 @@
-package com.example.quotes;
+package com.moringa.myquotes;
 
 import android.content.Context;
 import android.content.Intent;
-import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.quotes.models.Quote;
-import com.squareup.picasso.Picasso;
+import com.moringa.myquotes.models.Quote;
 
 import org.parceler.Parcels;
 

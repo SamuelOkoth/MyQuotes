@@ -1,4 +1,4 @@
-package com.example.quotes.util;
+package com.moringa.myquotes.util;
 
 public interface ItemTouchHelperAdapter {
     boolean onItemMove(int fromPosition, int toPosition);

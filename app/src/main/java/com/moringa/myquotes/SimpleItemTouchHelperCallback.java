@@ -1,4 +1,4 @@
-package com.example.quotes;
+package com.moringa.myquotes;
 
 public class SimpleItemTouchHelperCallback {
 }
