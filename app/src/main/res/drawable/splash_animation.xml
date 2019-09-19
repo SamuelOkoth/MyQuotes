@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/animation_list_splash"
+        android:oneshot="false">
+        <item
+            android:drawable="@drawable/cool"
+            android:duration="500" />
+        <item
+            android:drawable="@drawable/sad"
+            android:duration="500" />
+        <item
+            android:drawable="@drawable/vain"
+            android:duration="500" />
+        <item
+            android:drawable="@drawable/cute"
+            android:duration="500" />
+        <item
+            android:drawable="@drawable/happy"
+            android:duration="500" />
+    </animation-list>

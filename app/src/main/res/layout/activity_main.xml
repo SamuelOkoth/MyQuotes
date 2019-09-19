@@ -80,5 +80,33 @@
         android:layout_marginRight="109dp"
         android:hint="Enter author's name"
         android:text=""/>
+    <Button
+        android:id="@+id/btn_rotate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Rotate"
+        android:background="@color/colorAccent"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/colorTextIcons" />
+
+    <TextView
+        android:id="@+id/mainText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/savedQuotesButton"
+        android:layout_alignStart="@+id/imageView"
+        android:layout_alignLeft="@+id/imageView"
+        android:layout_alignEnd="@+id/imageView"
+        android:layout_alignRight="@+id/imageView"
+        android:layout_marginStart="115dp"
+        android:layout_marginLeft="115dp"
+        android:layout_marginTop="43dp"
+        android:layout_marginEnd="163dp"
+        android:layout_marginRight="163dp"
+        android:layout_marginBottom="602dp"
+        android:text="rotate here"
+        android:textSize="28sp"
+        android:textStyle="bold" />
 
 </RelativeLayout>

@@ -27,10 +27,10 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 
 public class MainActivity extends AppCompatActivity {
-      private SharedPreferences mSharedPreferences;
-      private SharedPreferences.Editor mEditor;
-      private ValueEventListener mSearchedAuthorReferenceListener;
-      private DatabaseReference mSearchedAuthorReference;
+    private SharedPreferences mSharedPreferences;
+    private SharedPreferences.Editor mEditor;
+    private ValueEventListener mSearchedAuthorReferenceListener;
+    private DatabaseReference mSearchedAuthorReference;
     @BindView(R.id.addButton) Button mAddButton;
     @BindView(R.id.readButton) Button mReadButton;
     @BindView(R.id.picButton) Button mPicButton;
@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
             public void onCancelled(DatabaseError databaseError) {
 
             }
-       });
+        });
 
 
         super.onCreate(savedInstanceState);
@@ -130,7 +130,7 @@ public class MainActivity extends AppCompatActivity {
 //                mEditor.putString(Constants.PREFERENCES_AUTHOR_KEY, author).apply();
 //
 //            }
-   });
+        });
         mSavedQuotesButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -194,5 +194,4 @@ public class MainActivity extends AppCompatActivity {
         finish();
     }
 }
-
 

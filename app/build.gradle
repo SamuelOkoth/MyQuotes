@@ -62,6 +62,10 @@ dependencies {
     implementation 'com.google.firebase:firebase-auth:17.0.0'
     implementation 'com.firebaseui:firebase-ui-database:3.3.1'
 
+//animamation
+
+
+
 
 }
 apply plugin: 'com.google.gms.google-services'

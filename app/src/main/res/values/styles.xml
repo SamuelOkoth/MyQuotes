@@ -7,7 +7,9 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
-    <style name="NoActionBarTheme" parent="Theme.AppCompat.Light.NoActionBar"></style>
+    <style name="NoActionBarTheme" parent="Theme.AppCompat.Light.NoActionBar">
+
+    </style>
         <item name="item_click_support" type="id" />
 
 </resources>
